@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<body>
+    <label for="meter">Nhập mét</label><br>
+    <input type="number" id="inmeter">
+    <button onclick="chuyendoi()">chuyen doi</button>
+    <script>
+        function chuyendoi() {
+            var met = Number(document.getElementById('inmeter').value);
+            ft = met * 3.2808;
+            document.write('feet la ' + ft);
+        }
+    </script>
+</body>
+</html>
